@@ -7,6 +7,7 @@ module.exports = {
     entry: { // 入口 (多)
         app: ['./src/main.tsx']
     },
+    cssModule: false, // css module
     build: { // 生产环境
         env: '"production"',
         static: path.resolve(__dirname, '../static'), //资源目录
