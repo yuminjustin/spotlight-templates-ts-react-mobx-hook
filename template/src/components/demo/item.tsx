@@ -35,13 +35,13 @@ const Item = (props: any) => {
           <input
             type="checkbox"
             className="dbl"
-            style={{ display: isEdit ? "none" : "initial" }}
+            style=\{{ display: isEdit ? "none" : "initial" }}
             onChange={chooseHandler}
             checked={props.todo.completed}
           />
           <span
             className="dble"
-            style={{ display: isEdit ? "none" : "initial" }}
+            style=\{{ display: isEdit ? "none" : "initial" }}
           >
             {props.todo.title}
           </span>
@@ -49,13 +49,13 @@ const Item = (props: any) => {
             type="text"
             placeholder={props.todo.title}
             className="dbl"
-            style={{ display: isEdit ? "initial" : "none" }}
+            style=\{{ display: isEdit ? "initial" : "none" }}
             value={editText}
             onChange={handleChange}
           />
           <div className="operate">
             <button
-              style={{
+              style=\{{
                 display: isEdit ? "none" : "initial",
                 marginRight: "8px",
               }}
@@ -64,7 +64,7 @@ const Item = (props: any) => {
               删除
             </button>
             <button
-              style={{
+              style=\{{
                 display: isEdit ? "initial" : "none",
                 marginRight: "8px",
               }}
@@ -73,7 +73,7 @@ const Item = (props: any) => {
               修改
             </button>
             <button
-              style={{ display: isEdit ? "initial" : "none" }}
+              style=\{{ display: isEdit ? "initial" : "none" }}
               onClick={cancelHandler}
             >
               取消
