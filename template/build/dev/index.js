@@ -7,7 +7,7 @@ let _dev = config.dev;
 console.log(chalk.green('> 正在启动web服务\n' + '> 监听端口:' + _dev.port + '\n'));
 console.log(chalk.cyan('开发地址:http://'+_dev.host+':' + _dev.port + '\n'));
 
-shell.exec('cross-env NODE_ENV=development webpack server --open --progress --config  build/dev/dev.js', (code, stdout, stderr) => {
+shell.exec('cross-env NODE_ENV=development webpack server --open --progress --config  build/dev/dev.js', function (code, stdout, stderr) {
     if (code == 0) {
         console.log(chalk.green(stdout))
     } else {
