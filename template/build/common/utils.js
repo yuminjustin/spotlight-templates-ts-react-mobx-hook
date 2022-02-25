@@ -2,7 +2,7 @@
 let path = require('path')
 let origin_config = require("../config")
 let MiniCssExtractPlugin = require("mini-css-extract-plugin");
-let HtmlWebpackPlugin = require('html-webpack-plugin');
+let HtmlWebpackPlugin = require('html-webpack-plugin')
 
 
 /* 端口 */
@@ -70,18 +70,23 @@ exports.styleLoaders = (isdev) => {
             }
         }
     },
-        _s = (_d) => {
+        _s = (_d, options) => {
             return {
                 test: /\.css$/,
                 include: [_d],
-                loader: 'css-loader'
+                loader: 'css-loader',
+                options: options || {}
             }
         };
     return [
         _f(/node_modules/),
         _s(/node_modules/),
         _f(/src/),
-        _s(/src/),
+        _s(/src/, origin_config.cssModule ? {
+            modules: {
+                localIdentName: "[local]--[hash:base64:5]",
+            },
+        } : {}),
         {
             test: /\.css$/,
             include: [/src/],
