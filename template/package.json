@@ -1,13 +1,13 @@
 {
-  "name": "tsreact",
+  "name": "{{name}}",
   "version": "1.0.0",
-  "description": "A typescript+react project",
+  "description": "{{description}}",
   "main": "index.js",
   "scripts": {
     "dev": "node  build/dev/index.js",
     "build": "node build/prod/index.js"
   },
-  "author": "lixiaolong <lixiaolong@daspatial.com>",
+  "author": "{{author}}",
   "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.14.3",
