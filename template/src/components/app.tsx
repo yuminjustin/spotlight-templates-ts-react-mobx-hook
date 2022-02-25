@@ -9,7 +9,7 @@ const App = () => {
   const [collapsed, setCollapsed] = useState<boolean>(false);
   return (
     <HashRouter>
-      <Layout style={{ height: "100vh" }}>
+      <Layout style=\{ height: "100vh" }}>
         <Left
           collapsed={collapsed}
           onCollapse={() => setCollapsed(!collapsed)}
