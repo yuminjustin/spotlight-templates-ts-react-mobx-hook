@@ -1,6 +1,6 @@
 /* dev webpack 配置 */
 let webpack = require('webpack');
-let { merge } = require('webpack-merge');
+let {merge} = require('webpack-merge');
 let webpackBase = require('../common/base');
 let utils = require('../common/utils');
 let config = require('../config');
@@ -54,7 +54,7 @@ var _dev = config.dev,
             stats: {
                 colors: true
             },
-            before: (app) => {
+            before: function (app) {
                 config.dev.serverHandler && config.dev.serverHandler(app)
             }
         }
