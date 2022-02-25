@@ -7,7 +7,7 @@ spotlight scaffold template for react + typescript hook + mobx<br>
 
      cd my-project
 
-     npm install or yarn
+     npm install
 
      npm run dev
 
