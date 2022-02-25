@@ -49,7 +49,7 @@ const Footer = inject(
           </p>
           <button
             className="del"
-            style={{ display: todos.active ? "initial" : "none" }}
+            style=\{{ display: todos.active ? "initial" : "none" }}
             onClick={deleteHandler}
           >
             删除选中项
