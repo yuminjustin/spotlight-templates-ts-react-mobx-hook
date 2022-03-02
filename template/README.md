@@ -1,5 +1,5 @@
 # spotlight-templates-ts-react-mobx-hook
-spotlight scaffold template for react + typescript hook + mobx<br>
+spotlight scaffold template for typescript + react hook + mobx + ant-design<br>
 
 ## Use：
 
